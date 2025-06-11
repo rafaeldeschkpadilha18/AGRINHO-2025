@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festejando Conexão: Campo e Cidade</title>
+    <!-- Carregar a biblioteca p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #87CEEB;
+            font-family: Arial, sans-serif;
+        }
+        canvas {
+            border: 2px solid black;
+        }
+        .score {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            color: black;
+        }
+        .celebration {
+            font-size: 32px;
+            color: gold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="score">Campo: <span id="scoreCampo">0</span> | Cidade: <span id="scoreCidade">0</span></div>
+    <div class="celebration" id="celebrationMessage" style="display:none;">🎉 Conexão Celebrada! 🎉</div>
+    <script src="sketch.js"></script> <!-- Arquivo com o código do jogo -->
+</body>
+</html>
